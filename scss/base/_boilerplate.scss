@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;500&family=Poppins:wght@200;400;600;700&display=swap');
+
+:root {
+  --primary-color: #2d2e32; // headings, navlinks, logo
+  --secondary-color: #767676; // paragraphs
+  --blue-color: #147efb; // section key
+  --green-color: #2ea738;
+  --orange-color: #fc821f;
+  
+  --bkg-primary-color: #fff;
+  --bkg-secondary-color: #f9f9f9; // backgrounds
+
+  --fs-logo: 1.2rem;
+
+  --fs-lg: 3.2rem;
+  --fs-md: 1.15rem;
+  --fs-sub-header: 1rem;
+  --fs-sm: 0.8rem;
+  
+  --ff-primary: "Poppins", sans-serif;
+  --ff-secondary: "Mulish", sans-serif;
+}
+
+
+@media screen and (max-width: 48em) {
+  :root {
+    --primary-color: #2d2e32; // headings, navlinks, logo
+    --secondary-color: #767676; // paragraphs
+    --blue-color: #147efb; // section key
+    
+    --bkg-primary-color: #fff;
+    --bkg-secondary-color: #f9f9f9; // backgrounds
+  
+    --fs-logo: 1.2rem;
+  
+    --fs-lg: 2.4rem;
+    --fs-md: 1rem;
+    --fs-sub-header: .85rem;
+    --fs-sm: .7rem;
+  
+    --ff-primary: "Poppins", sans-serif;
+    --ff-secondary: "Mulish", sans-serif;
+  }
+}
