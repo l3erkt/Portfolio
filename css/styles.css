@@ -518,5 +518,6 @@ a {
     align-items: center;
     flex-direction: column-reverse;
     gap: 1rem;
+    padding: unset;
   }
 }
