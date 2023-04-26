@@ -58,12 +58,12 @@
       rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     background-color: var(--bkg-primary-color);
     top: 0;
-    bottom: 65%;
+    bottom: 50%;
     left: 0;
     right: 0;
-    padding: 3rem;
+    padding: 0 3rem;
     border-radius: 0 0 4rem 4rem;
-    transform: translateY(-100%);
+    transform: translateY(-150%);
     transition: .6s ease-in-out;
     z-index: 100;
   }
@@ -83,7 +83,7 @@
     display: block;
     position: absolute;
     font-size: 25px;
-    top: 8%;
-    right: 7%;
+    top: 9%;
+    right: 9%;
   }
 }
