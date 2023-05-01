@@ -1,14 +1,21 @@
 /* Mobile Nav-section */
-const navLinks = document.querySelector(".nav-links");
+const navContainer = document.querySelector(".nav-links");
 const dimBkg = document.querySelector(".bkg-dim");
 const closeBtn = document.getElementById("close-nav-btn");
 const hamburger = document.getElementById("hamburger");
+const links = document.querySelectorAll('.nav-links li')
 
 
 hamburger.addEventListener("click", () => {
-  navLinks.style.transform = "translateY(0)";
+  navContainer.style.transform = "translateY(0)";
 });
 
 closeBtn.addEventListener("click", () => {
-  navLinks.style.transform = "";
+  navContainer.style.transform = "";
 });
+
+links.forEach((e) => {
+  e.addEventListener('click', (link) => {
+    navContainer.style.transform = "";
+  })
+})

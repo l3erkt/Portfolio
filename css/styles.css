@@ -182,7 +182,7 @@ a {
 
 .hero {
   display: flex;
-  gap: 5rem;
+  gap: 3.5rem;
   justify-content: center;
   flex-direction: column;
   width: 100%;
@@ -235,6 +235,8 @@ a {
   border-right: 1px solid var(--secondary-color);
 }
 .hero-skills .skill-list {
+  width: 100%;
+  max-width: 25em;
   cursor: pointer;
   display: flex;
   flex-direction: row;
