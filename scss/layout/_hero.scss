@@ -1,0 +1,128 @@
+.hero {
+  display: flex;
+  gap: 3.5rem;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  min-height: 43em;
+  background-color: var(--bkg-secondary-color);
+}
+
+.row-1 {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 4.5rem;
+  justify-content: center;
+}
+
+.hero-text {
+  width: 100%;
+  max-width: 25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  justify-content: end;
+
+  & h1 {
+    font-size: var(--fs-lg);
+    line-height: 1;
+  }
+
+  & p {
+    font-size: var(--fs-sm);
+    color: var(--secondary-color);
+  }
+
+  .info-links {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+    font-size: 1.7rem;
+  }
+}
+
+.hero-skills {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+
+  & p {
+    font-weight: 600;
+    padding-right: 1.2rem;
+    border-right: 1px solid var(--secondary-color);
+  }
+
+  .skill-list {
+    width: 100%;
+    max-width: 25em;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    // grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+
+    .programing-lang {
+      width: 35px;
+    }
+
+    & li {
+      background-color: var(--bkg-primary-color);
+      padding: 0.6rem;
+      border-radius: 2rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+      transition: 1.25s;
+    }
+
+    & li:hover {
+      transform: rotate(360deg);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.49);
+    }
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .hero-logo {
+    width: 10em;
+  }
+
+  .hero {
+    gap: 2rem;
+    justify-content: center;
+    padding: 3rem 1rem 0;
+  }
+
+  .row-1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5rem;
+    justify-content: center;
+  }
+
+  .hero-text {
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-skills {
+    flex-direction: column;
+    gap: .5rem;
+
+    & p {
+      border-right: unset;
+      border-bottom: 1px solid var(--secondary-color);
+      padding-right: unset;
+      padding-bottom: 0.3rem;
+    }
+
+    .skill-list {
+      gap: .5rem;
+    }
+  }
+}
